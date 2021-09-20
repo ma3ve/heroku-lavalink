@@ -6,7 +6,7 @@ let application = fs.readFileSync("./application.yml", "utf8")
 
 if (process.env.PORT) {
     application = application.replace("DYNAMICPORT", process.env.PORT)
-    console.log("PORT.........................................................", PORT);
+    console.log("PORT.........................................................", process.env.PORT);
 }
 
 if (process.env.PASS) {
